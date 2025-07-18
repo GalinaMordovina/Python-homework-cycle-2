@@ -19,3 +19,7 @@ build-backend = "poetry.core.masonry.api"
 pytest = "^8.4.1"
 pytest-cov = "^6.2.1"
 
+[tool.isort]
+line_length = 140
+multi_line_output = 3
+

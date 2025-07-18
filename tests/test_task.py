@@ -1,4 +1,5 @@
-from src.task import Product, Category
+from src.task import Category, Product
+
 
 def test_product_init():
     p = Product("Test", "Desc", 100.5, 2)
@@ -7,8 +8,9 @@ def test_product_init():
     assert p.price == 100.5
     assert p.quantity == 2
 
+
 def test_category_init():
-    Category.category_count = 0 # счетчики перед тестами, чтобы не сбрасывать
+    Category.category_count = 0  # счетчики перед тестами, чтобы не сбрасывать
     Category.product_count = 0
 
     p1 = Product("One", "Desc", 50.0, 1)

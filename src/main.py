@@ -1,7 +1,6 @@
 # from src.task import Product, Category
 from src.loader import load_data_from_json
 
-
 if __name__ == "__main__":
     categories = load_data_from_json("../data/products.json")
 
